@@ -1,17 +1,21 @@
-
+<img width="917" height="369" alt="Screenshot 2026-06-25 220328 - Copy" src="https://github.com/user-attachments/assets/a282d858-8ad5-4c12-afb2-b303e3e43353" />
 
 #  AI Resume Screener
 
 An AI-powered tool that scores how well a resume matches a job description — instantly, using LLaMA 3.3 70B via the Groq API. Built as an early MVP to test a product idea: **can AI replace the first-pass manual resume screening that recruiters and hiring managers do every day?**
 
  **Live demo:** [ai-resume-screener-mgzhqpn7dboita2eksc8kw.streamlit.app](https://ai-resume-screener-mgzhqpn7dboita2eksc8kw.streamlit.app/)
- **Demo video:** 
+ **Pictures:** 
 
 
 
-Uploading Screen Recording 2026-06-25 215936.mp4…
+<img width="935" height="415" alt="Screenshot 2026-06-25 220245 - Copy" src="https://github.com/user-attachments/assets/4478caf3-65f8-4c85-8ba0-1ac423cf07c1" />
+
+<img width="959" height="403" alt="Screenshot 2026-06-25 220301 - Copy" src="https://github.com/user-attachments/assets/47e2234a-eab7-41a2-84ca-3185d1ad998e" />
 
 
+<img width="953" height="416" alt="Screenshot 2026-06-25 220322 - Copy" src="https://github.com/user-attachments/assets/6c5caebf-a5bc-4674-8b8b-4f91023973f8" />
+<img width="940" height="358" alt="Screenshot 2026-06-25 220332" src="https://github.com/user-attachments/assets/83623171-a8d9-463c-897e-a596ddcd266f" />
 
 ---
 
