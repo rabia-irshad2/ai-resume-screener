@@ -4,9 +4,25 @@ import os
 from groq import Groq
 from dotenv import load_dotenv
 
-load_dotenv()  # reads your .env file automatically
+load_dotenv()  # works locally; no-op on Streamlit Cloud (no .env file there)
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
+
+def _get_api_key() -> str:
+    """
+    Try to get the Groq API key from Streamlit secrets first (works on
+    Streamlit Cloud). Falls back to environment variable / .env file
+    (works for local development).
+    """
+    try:
+        import streamlit as st
+        if "GROQ_API_KEY" in st.secrets:
+            return st.secrets["GROQ_API_KEY"]
+    except Exception:
+        pass
+    return os.getenv("GROQ_API_KEY", "")
+
+
+GROQ_API_KEY = _get_api_key()
 
 
 def _extract_json(text: str) -> str:
@@ -21,6 +37,11 @@ def _extract_json(text: str) -> str:
 
 
 def _call_groq(prompt: str, max_tokens: int = 1000) -> str:
+    if not GROQ_API_KEY:
+        raise ValueError(
+            "No Groq API key found. Set GROQ_API_KEY in your .env file "
+            "(local) or in Streamlit Cloud's Secrets settings (deployed)."
+        )
     client = Groq(api_key=GROQ_API_KEY)
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
