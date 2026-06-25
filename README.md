@@ -3,7 +3,9 @@
 An AI-powered tool that scores how well a resume matches a job description — instantly, using LLaMA 3.3 70B via the Groq API. Built as an early MVP to test a product idea: **can AI replace the first-pass manual resume screening that recruiters and hiring managers do every day?**
 
  **Live demo:** [ai-resume-screener-mgzhqpn7dboita2eksc8kw.streamlit.app](https://ai-resume-screener-mgzhqpn7dboita2eksc8kw.streamlit.app/)
- **Demo video:** [Add link if you post one]
+ **Demo video:** 
+
+
 
 ---
 
